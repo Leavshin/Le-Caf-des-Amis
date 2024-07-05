@@ -1,4 +1,61 @@
-/* Centrer le titre des horaires */
+#horaires {
+    text-align: center;
+}
+
 #horaires h2 {
     text-align: center;
+} 
+
+.horaires-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.table-horaires {
+    width: 90%;
+    max-width: 600px;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.table-horaires th, .table-horaires td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table-horaires th {
+    background-color: gold;
+    color: black;
+}
+
+.table-horaires td {
+    color: white;
+}
+
+#map {
+    width: 90%;
+    max-width: 600px;
+    height: 300px;
+    background-color: grey;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .horaires-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .table-horaires,
+    #map {
+        width: 45%; 
+        max-width: none;
+        margin-bottom: 0;
+    }
 }
