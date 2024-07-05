@@ -7,6 +7,7 @@
     <meta name="description" content="Bienvenue au Café des Amis !">
     <meta name="keywords" content="café, boissons, plats, convivialité, café des amis">
     <link rel="icon" href="./images/tasse-cafe-plate-vue-dessus.png">
+    <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/Contact.css">
 </head>
 </head>
@@ -27,28 +28,53 @@
         <section id="reservation">
             <h2>Réservez une table</h2>
             <form action="submit_reservation.php" method="post">
-                <label for="nom">Nom :</label>
-                <input type="text" id="nom" name="nom" required>
-                <label for="email">Email :</label>
-                <input type="email" id="email" name="email" required>
-                <label for="telephone">Téléphone :</label>
-                <input type="tel" id="telephone" name="telephone">
-                <label for="date">Date :</label>
-                <input type="date" id="date" name="date" required>
-                <label for="heure">Heure :</label>
-                <input type="time" id="heure" name="heure" required>
-                <label for="nombre_personnes">Nombre de personnes :</label>
-                <input type="number" id="nombre_personnes" name="nombre_personnes" min="1" required>
+                <div class="form-group">
+                    <div class="form-item">
+                        <label for="nom">Nom :</label>
+                        <input type="text" id="nom" name="nom" required>
+                    </div>
+                    <div class="form-item">
+                        <label for="prenom">Prénom :</label>
+                        <input type="text" id="prenom" name="prenom" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-item">
+                        <label for="email">Email :</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-item">
+                        <label for="telephone">Téléphone :</label>
+                        <input type="tel" id="telephone" name="telephone">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-item small">
+                        <label for="date">Date :</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-item small">
+                        <label for="heure">Heure :</label>
+                        <input type="time" id="heure" name="heure" required>
+                    </div>
+                    <div class="form-item small">
+                        <label for="nombre_personnes">Nombre de personnes :</label>
+                        <input type="number" id="nombre_personnes" name="nombre_personnes" min="1" required>
+                    </div>
+                </div>
                 <input type="submit" value="Réserver">
             </form>
+            
+            
+            
         </section>
     </main>
 
     <footer><br>
         <address>
             Café des Amis, 123 Rue Principale, 59000 Lille<br>
-            Tél : 06 07 08 09 10<br>
-            Email : contact@cafedesamis.com
+            <a href="tel:+0607080910">Tél : 06 07 08 09 10</a><br>
+            <a href="mailto:contact@cafedesamis.com">Email : contact@cafedesamis.com</a>
         </address>
         <ul>
             <li><a href="https://facebook.com/cafedesamis" target="_blank">Facebook</a></li>

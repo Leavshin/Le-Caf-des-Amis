@@ -1,0 +1,163 @@
+/* Appliquer à tout le corps de la page */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    background-image: url('../images/cafe-bistro-parisien-par-nuit-pluie-lumieres-brillant-trottoir_611456-284.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* En-tête */
+header {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+header img {
+    display: none;
+}
+
+header h1 {
+    color: gold;
+    font-size: 3em;
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    color: gold;
+}
+
+/* Sections */
+main {
+    padding: 20px;
+    flex: 1;
+}
+
+section {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin: 20px 0;
+}
+
+h2 {
+    color: gold;
+}
+
+/* Articles */
+article h3 {
+    color: gold;
+}
+
+/* Formulaires */
+form {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    background-color: gold;
+    color: black;
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+}
+
+form input[type="submit"]:hover {
+    background-color: white;
+}
+
+/* Tableau */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: gold;
+    color: black;
+}
+
+td {
+    color: white;
+}
+
+/* Pied de page */
+footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+}
+
+footer address, footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+footer address a {
+    color: white;
+    text-decoration: none;
+}
+
+footer address a:hover {
+    color: gold;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: gold;
+}

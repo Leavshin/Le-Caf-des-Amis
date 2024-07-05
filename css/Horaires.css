@@ -1,0 +1,4 @@
+/* Centrer le titre des horaires */
+#horaires h2 {
+    text-align: center;
+}

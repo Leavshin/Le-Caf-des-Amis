@@ -1,0 +1,51 @@
+/* Centrer les titres des sections */
+#menu h2, #galerie h2 {
+    text-align: center;
+}
+
+/* Articles côte à côte */
+#menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#menu article {
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px; /* Ajoute des bords arrondis */
+}
+
+#menu .articles-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+/* Galerie côte à côte */
+#galerie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#galerie .figures-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#galerie figure {
+    width: 45%;
+    margin: 10px 0;
+}
+
+#galerie img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
